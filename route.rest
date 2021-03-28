@@ -1,0 +1,53 @@
+GET http://localhost:3000/subscribers
+
+###
+Get http://localhost:3000/subscribers/605b70979fcd3e09acdc9784
+###
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{   
+    //"id": 3,
+    "name": "Soumya",
+    "subscriberToChannel": "Electrical"
+}
+
+###
+DELETE http://localhost:3000/subscribers/1
+
+
+###
+PATCH http://localhost:3000/subscribers/605a13903348c80464d30dbf
+Content-Type: application/json
+
+{
+    "name": "sayak",
+    "subscriberToChannel": "Web dev"
+}
+
+###
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{   
+    //"id": 3,
+    "email": "sayak123",
+    "password": "abc"
+}
+
+###
+GET http://localhost:3000/login
+
+###
+
+POST http://localhost:3000/login/register
+Content-Type: application/json
+
+{   
+    //"id": 3,
+    // "username": "vito123",
+    "email": "sayak123456",
+    "password": "123"
+}
+
+
